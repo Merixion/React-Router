@@ -13,3 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  background: linear-gradient(135deg, #0059ff,#00d9ff,#000000);
+  min-height: 100vh;
+}

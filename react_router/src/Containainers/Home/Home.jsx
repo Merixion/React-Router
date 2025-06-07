@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
+import {users} from '../../data/users'
 
 function Home() {
-  const users = [
-		{ id: 1, name: 'Maxim' },
-		{ id: 2, name: 'Masha' },
-		{ id: 199, name: 'misha' },
-	];
 	return (
-		<div>
+		<div className={styles.Home}>
 			<h1>Добро пожаловать</h1>
-      <ul>
-        {users.map(user =>{
-          <li key = {user.id}><Link to = {`/users/${user.id}`}>user.name</Link></li>
-        })}
-      </ul>
+			<ul>
+				{users.map(user => (
+					<li key={user.id}>
+						<Link to={`/users/${user.id}`} className={styles.names}>
+							{user.name}
+						</Link>
+					</li>
+				))}
+			</ul>
 		</div>
 	);
 }
