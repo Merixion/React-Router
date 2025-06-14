@@ -36,3 +36,28 @@ p{
 .navigate:hover{
   background: rgb(216, 216, 194);
 }
+
+
+.filterLength{
+  position: fixed;
+  gap: 10px;
+  background: red;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  left: 5px;
+  font-size: 20px;
+}
+
+.filterLength:hover{
+  background: rgb(174, 1, 1);
+}
+
+.length5{
+  top:10px
+}
+
+.length6{
+  top:50px
+}

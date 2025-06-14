@@ -4,6 +4,7 @@ import Home from './Containainers/Home/Home'
 import Info from './Containainers/Info/Info'
 import Rules from './Containainers/Rules/Rules'
 import UserPages from './Containainers/UsersPages'
+import { Length } from './Containainers/length'
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
 				<Route path='/' element={<Home />}></Route>
 				<Route path='/info' element={<Info />}></Route>
 				<Route path='/rules' element={<Rules />}></Route>
-				<Route path={`/users/:id`} element={<UserPages />}></Route>
+				<Route path={`/users/:id`} element={<UserPages/>}></Route>
+
 			</Routes>
 		</>
 	);
