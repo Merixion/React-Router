@@ -4,7 +4,6 @@ import Home from './Containainers/Home/Home'
 import Info from './Containainers/Info/Info'
 import Rules from './Containainers/Rules/Rules'
 import UserPages from './Containainers/UsersPages'
-import { Length } from './Containainers/length'
 
 function App() {
   return (
